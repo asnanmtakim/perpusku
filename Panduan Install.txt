@@ -1,6 +1,15 @@
-1. Import file database "public\db\perpusku.sql"
-2. Pastikan extension "intl" dan "sqlite3" telah diaktifkan di php.ini xampp
-3. Buka file ".env" dan pastikan konfigurasi database sesuai dengan database yg telah di import sebelumnya
-4. Jalankan perintah "php spark serve" di terminal, pastikan ada di folder yg benar
-5. Buka http://localhost:8080 di browser
-6. Enjoy
+- pastikan install xampp, composer(https://getcomposer.org/) dan git(https://git-scm.com/)
+- pastikan ekstensi php intl dan mbstring di xampp nya sudah aktif (cari aja ndek internet tutorial e)
+- clone repo github (taruh disembarang tempat)
+- setelah clone, masuk ke folder perpusku, lalu klik kanan git bash here
+- setelah terbuka terminal git, ketikan "composer update" tunggu sampai download slesai
+- ketikan lagi "git reset --hard"
+- buka folder perpusku di code editor masing"
+- rename file "env" menjadi ".env"
+- pilih dan buka file ".env"
+- hapus tanda pagar (#) pada baris 23 dan isi app.baseURL = 'https://localhost:8080/' (pakai petik)
+- hapus tanda pagar (#) pada baris 40-45 dan isi sesuai dg akses database masing-masing (nama database terserah)
+- simpan semua perubahan yg ada di file ".env"
+- jalankan xampp dan buat database baru lalu import file sql (ada di folder perpusku/public/db)
+- kembali ke terminal git bash ketikan "php spark serve"
+- buka browser dan akses aplikasi di https://localhost:8080/
